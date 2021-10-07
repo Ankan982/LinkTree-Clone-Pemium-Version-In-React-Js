@@ -1,0 +1,21 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.user__name{
+     margin-top: 110px;
+     color: #FFFFFFFF;
+    
+}
+.profile__pic
+{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+
+ 
+}
