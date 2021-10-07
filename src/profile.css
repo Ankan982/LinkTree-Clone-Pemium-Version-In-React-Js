@@ -1,21 +1,41 @@
 .logo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .user__name{
-     margin-top: 110px;
+     margin-left: 10px;
      color: #FFFFFFFF;
     
 }
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
 .profile__pic
 {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -50%);
-    padding: 5px;
-    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
-
- 
+    margin-top: 50px;
+    box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
